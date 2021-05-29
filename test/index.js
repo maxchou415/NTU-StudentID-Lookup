@@ -22,11 +22,13 @@ describe('Find department name by student id', function () {
     expect(department).to.equal('資工系')
   })
   it('Illegal department code', function () {
-    const department = tool({ studentId: 'b09Z02007' })
-    expect(department).to.equal(undefined)
+    expect(() => {
+      tool({ studentId: 'b09Z02007' })
+    }).to.throw(Error, /INVALID_DEPARTMENT_CODE/)
   })
   it('Illegal format (Length)', function () {
-    const department = tool({ studentId: 'b09Z0200' })
-    expect(department).to.equal(undefined)
+    expect(() => {
+      tool({ studentId: 'b09Z0200' })
+    }).to.throw(Error, /INVALID_FORMAT/)
   })
 })

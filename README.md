@@ -1,5 +1,7 @@
 # NTU Student ID Lookup
-臺灣大學學號找尋對應系所。
+臺灣大學學號找尋對應系所
+
+**由於<u>轉雙輔系</u>生學號為原系所學號，因此只會輸出原學號之對應系所。**
 
 ## Usage
 1. Install the package
@@ -9,7 +11,14 @@ npm install --save ntu-studentid-lookup
 2. Call and use it
 ```js
 const lookup = require('ntu-studentid-lookup')
-const department = lookup({ studentId: 'T09902345' })
+
+let department
+try {
+  department = lookup({ studentId: 'T09902345' })
+} catch (error) {
+  // INVALID_FORMAT or INVALID_DEPARTMENT_CODE
+}
+
 console.log(department)
 // '資工系'
 ```
