@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
     "test": "mocha --reporter spec"
   },
@@ -10,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/maxchou415/NTU-StudentID-Lookup.git"
   },
-  "author": "",
+  "author": {
+    "name": "Max Yi-Hsun Chou",
+    "email": "maxchou415@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/maxchou415/NTU-StudentID-Lookup/issues"

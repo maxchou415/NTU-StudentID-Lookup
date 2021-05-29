@@ -1,3 +1,6 @@
+/* eslint no-undef: "error" */
+/* eslint-env node */
+
 const expect = require('chai').expect
 const tool = require('../index')
 
@@ -19,11 +22,11 @@ describe('Find department name by student id', function () {
     expect(department).to.equal('資工系')
   })
   it('Illegal department code', function () {
-    const department = tool({ studentId: 'b09C02007' })
+    const department = tool({ studentId: 'b09Z02007' })
     expect(department).to.equal(undefined)
   })
   it('Illegal format (Length)', function () {
-    const department = tool({ studentId: 'b09C0200' })
+    const department = tool({ studentId: 'b09Z0200' })
     expect(department).to.equal(undefined)
   })
 })
