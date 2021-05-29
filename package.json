@@ -1,0 +1,23 @@
+{
+  "name": "ntu-studentid-lookup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxchou415/NTU-StudentID-Lookup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxchou415/NTU-StudentID-Lookup/issues"
+  },
+  "homepage": "https://github.com/maxchou415/NTU-StudentID-Lookup#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  }
+}
