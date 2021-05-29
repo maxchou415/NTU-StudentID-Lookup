@@ -12,10 +12,11 @@ module.exports = ({ studentId = '' }) => {
   departmentList.forEach((department) => {
     if (department.code === departmentCode) {
       studentDepartment = department.shortForm
-    } else {
-      return undefined
     }
   })
 
+  if (!studentDepartment) {
+    return undefined
+  }
   return studentDepartment
 }
