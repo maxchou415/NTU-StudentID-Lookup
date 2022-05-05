@@ -6,12 +6,13 @@ module.exports = ({ studentId = '' }) => {
     throw new Error('INVALID_FORMAT')
   }
 
-  const departmentCode = `${studentIdArray[3]}${studentIdArray[4]}${studentIdArray[5]}0`
+  let departmentCode = `${studentIdArray[3]}${studentIdArray[4]}${studentIdArray[5]}0`
+  departmentCode = departmentCode.toUpperCase()
 
   let studentDepartment
   departmentList.forEach((department) => {
     if (department.code === departmentCode) {
-      studentDepartment = department.shortForm
+      studentDepartment = department.full_name
     }
   })
 
