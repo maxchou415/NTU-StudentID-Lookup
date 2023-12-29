@@ -1,5 +1,5 @@
 {
-  "name": "@jschang19/ntu-studentid-lookup",
+  "name": "ntu-studentid-lookup",
   "version": "2.0.1",
   "description": "",
   "main": "index.js",
