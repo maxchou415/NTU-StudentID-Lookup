@@ -1,9 +1,9 @@
 {
-  "name": "ntu-studentid-lookup",
-  "version": "2.0.1",
+  "name": "@jschang19/ntu-studentid-lookup",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  
+  "module": "index.mjs",
   "scripts": {
     "test": "mocha --reporter spec"
   },
