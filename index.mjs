@@ -1,4 +1,4 @@
-import departmentList from '../data/departments.json'
+import departmentList from './data/departments.json'
 
 function Lookup({ studentId = '' }) {
   if (!/^[a-zA-Z]{1}[0-9]{2}[a-zA-Z0-9]{6}$/.test(studentId)) {
